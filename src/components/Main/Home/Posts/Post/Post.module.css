@@ -1,0 +1,7 @@
+.post {
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid grey;
+    border-radius: 25px;
+    min-height: 160px;
+}
