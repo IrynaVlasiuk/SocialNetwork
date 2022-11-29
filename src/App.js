@@ -12,25 +12,25 @@ import Home from "./components/Main/Home/Home";
 import SideBar from "./components/Main/SideBar/SideBar";
 
 function App(props) {
-  return (
-     <div className="App">
-        <div className="container">
-           <Header/>
-           <Main>
-              <NavBar/>
-              <Routes>
-                  <Route path='/home' element={<Home store={props.state.homePage}/>}/>
-                  <Route path='/messages/*' element={<Messages store={props.store}/>}/>
-                  <Route path='/friends' element={<Friends/>}/>
-                  <Route path='/pictures' element={<Pictures/>}/>
-                  <Route path='/videos' element={<Videos/>}/>
-              </Routes>
-               <SideBar/>
-           </Main>
-           <Footer/>
+    return (
+        <div className="App">
+            <div className="container">
+                <Header/>
+                <Main>
+                    <NavBar/>
+                    <Routes>
+                        <Route path='/' element={<Home store={props.state.homePage}/>}/>
+                        <Route path='/messages/*' element={<Messages store={props.store}/>}/>
+                        <Route path='/friends' element={<Friends/>}/>
+                        <Route path='/pictures' element={<Pictures/>}/>
+                        <Route path='/videos' element={<Videos/>}/>
+                    </Routes>
+                    <SideBar/>
+                </Main>
+                <Footer/>
+            </div>
         </div>
-     </div>
-  );
+    );
 }
 
 export default App;
